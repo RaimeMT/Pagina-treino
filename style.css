@@ -1,0 +1,351 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html { 
+  font-size: 16px;
+  font-family: 'Clash Display', sans-serif;
+  color: #000;
+  line-height: 1;
+}
+
+.block_solvieg {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.block_title,
+.block_info {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.block_title{
+  margin-bottom: 4rem;
+}
+
+.block_info{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.block_brands{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.area {
+  width: 100%;
+  max-width: 234px;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid_info {
+  width: 25%;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.value {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 1.2;
+}
+
+.value span {
+  font-style: normal;
+  font-weight: 600;
+  color: #D2F65A;
+  font-size: 3.4rem;
+}
+
+.grid_brand {
+  position: relative;
+  width: 16.6%;
+  overflow: hidden;
+}
+
+.area_brand {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.area_brand-1 {
+  max-width: 95px;
+}
+
+.area_brand-2 {
+  max-width: 100px;
+}
+
+.area_brand-3 {
+  max-width: 140px;
+}
+
+.area_brand-4 {
+  max-width: 52px;
+}
+
+.area_brand-5 {
+  max-width: 78px;
+}
+
+.area_brand-6 {
+  max-width: 132px;
+}
+
+.image.image_brand-1 {
+  position: absolute;
+  width: auto;
+  top: 8px;
+}
+
+/* parte dois */
+
+#sectionValues {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px;
+}
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 96px;
+}
+
+.sectionOne{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+  
+}
+
+.one{
+  width: 752px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.two{
+ width: 100%;
+ height: 80px;
+ display: flex;
+ padding-right: 16px;
+ align-items: center;
+ gap: 16px;
+}
+
+.two2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 170px;
+  height: 37px;
+}
+
+.sectionTwo{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 70%;
+  height: auto;
+}
+
+.card{
+  padding: 48px;
+  width: 650px;
+  height: 200px;
+}
+
+
+
+
+
+.brand{
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height:  80px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.towh1{
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.twop{
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(25, 25, 25, 0.70);
+}
+
+.sectionh1{
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height:38px;
+  text-transform: uppercase;
+}
+
+.sectionp{
+  color: var(--text-default, #191919);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+
+.estrelaverdepreta{
+  position: absolute;
+  display: flex;
+  right: -164px;
+  top: -28px;
+}
+
+@media(max-width:1200px) {
+  html {
+      font-size: 14px;
+  }
+
+  .title {
+      width: 90%;
+  }
+
+  .block_title,
+  .block_info,
+  .block_brands {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+
+  .subtitle {
+      margin-left: 5%;
+  }
+
+  .content {
+      justify-content: center;
+  }
+
+  .grid_info {
+      width: 35%;
+  }
+
+  .grid_brand {
+      width: 26%;
+  }
+
+  .area_brand {
+      margin-bottom: 2rem;
+  }
+  #sectionValues{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .container{
+    display: contents;
+    width: 50%;
+  }
+  
+  .sectionOne{
+    display: contents;
+    width: 50%;
+  }
+}
+
+
+@media(max-width: 800px) {
+  html {
+      font-size: 12px;
+  }
+
+
+  .grid_info {
+      width: 50%;
+  }
+
+  .grid_brand {
+      width: 50%;
+  }
+
+  
+}
+
+@media(max-width: 540px) {
+
+  .grid_info {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+
+}
