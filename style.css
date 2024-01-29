@@ -213,8 +213,6 @@ html {
 
 
 
-
-
 .brand{
   font-size: 5rem;
   font-style: normal;
@@ -269,6 +267,27 @@ html {
   top: -28px;
 }
 
+/* section 3 */
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.carousel-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-wrapper.auto {
+  animation: slide 9s infinite;
+}
+
+
 @media(max-width:1200px) {
   html {
       font-size: 14px;
@@ -307,9 +326,7 @@ html {
       margin-bottom: 2rem;
   }
   #sectionValues{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
+    align-items: center;
   }
 
   .container{
@@ -320,6 +337,12 @@ html {
   .sectionOne{
     display: contents;
     width: 50%;
+  }
+
+  .estrelaverdepreta{
+    align-items: center;
+    flex-direction: row-reverse;
+    position: static;
   }
 }
 
@@ -338,6 +361,17 @@ html {
       width: 50%;
   }
 
+  #sectionValues{
+    justify-content: center;
+  }
+
+  .sectionOne {
+    height: auto; 
+  }
+
+  .estrelaverdepreta{
+    align-items: center;
+  }
   
 }
 
@@ -347,5 +381,26 @@ html {
       width: 100%;
       margin-bottom: 2rem;
   }
+  .card{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #sectionValues{
+    
+  }
+}
 
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
 }
