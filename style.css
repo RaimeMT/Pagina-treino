@@ -159,14 +159,13 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 96px;
 }
 
 .sectionOne{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 50%;
   height: 700px;
   
 }
@@ -200,8 +199,6 @@ html {
 .sectionTwo{
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  width: 70%;
   height: auto;
 }
 
@@ -261,31 +258,162 @@ html {
 
 
 .estrelaverdepreta{
-  position: absolute;
+  position: relative;
   display: flex;
-  right: -164px;
-  top: -28px;
+  right: -1100px;
 }
 
 /* section 3 */
 
-.carousel-container {
+.carousel {
+  position: relative;
   width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  padding: 48px 0px 96px 0px;
+}
+
+.scroll {
   display: flex;
-  gap: 1rem;
+  width: 100%;
+  
+  div {
+    font-weight: 500;
+    font-size: 4rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #212121;
+    animation: animate 40s -40s linear infinite;
+    will-change: transform;
+    
+    &:nth-child(2) {
+      animation: animate2 40s -20s linear infinite;
+    }
+  }
+}
+
+.outroCarousel{
+  position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
-.carousel-wrapper{
+
+.carousel2{
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: transform 0.5s ease-in-out;
+  background-color: #D2F65A;
+  
+  div {
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #212121;
+    animation: animate 40s -40s linear infinite;
+    will-change: transform;
+    
+    &:nth-child(2) {
+      animation: animate2 40s -20s linear infinite;
+    }
+  }
 }
 
-.carousel-wrapper.auto {
-  animation: slide 9s infinite;
+.outroCarousel2 {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  padding: 48px 0px 96px 0px;
 }
+
+.carousel3 {
+  display: flex;
+  gap: 2rem;
+  background-color: #D2F65A;
+  
+  div {
+    font-weight: 500;
+    font-size: 4rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #212121;
+    animation: animate 40s -40s linear infinite;
+    will-change: transform;
+    
+    &:nth-child(2) {
+      animation: animate2 40s -20s linear infinite;
+    }
+  }
+}
+
+/* fotos section 3 */
+
+
+.baner{
+  width: 100%;
+  padding: 0 48px;
+}
+
+.invision{
+  width: 100%;
+  padding-bottom: 9rem;
+  display: flex;
+}
+
+.box{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.fotobaner{
+  width: 100%;
+  border: solid 5px transparent;
+}
+
+.fotobaner:hover{
+  border-color: #D2F65A;
+  transform: scale(1.01)
+}
+
+.shampo img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
+.shampo{
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.studio img{
+  max-width: 100%; 
+  height: auto; 
+}
+
+.studio{
+  width: 70%;
+}
+
+.poster img{
+  max-width: 100%; 
+  height: auto; 
+}
+
+.poster{
+  width: 70%;
+}
+
+
+
 
 
 @media(max-width:1200px) {
@@ -344,7 +472,18 @@ html {
     flex-direction: row-reverse;
     position: static;
   }
+
+  .baner{
+   
+  }
+
+  .invision{
+  
+    display: flex;
+  }
 }
+
+
 
 
 @media(max-width: 800px) {
@@ -363,6 +502,8 @@ html {
 
   #sectionValues{
     justify-content: center;
+    display: revert-layer;
+
   }
 
   .sectionOne {
@@ -385,22 +526,27 @@ html {
     width: 100%;
     margin-bottom: 2rem;
   }
-  #sectionValues{
-    
+  .sectionTwo{
+    display: flex;
   }
 }
 
-@keyframes slide {
-  0%, 100% {
-    transform: translateX(0);
+/* animation */
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
   }
-  25% {
-    transform: translateX(0);
-  }
-  50% {
+  100% {
     transform: translateX(-100%);
   }
-  75% {
-    transform: translateX(-100%);
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
   }
 }
